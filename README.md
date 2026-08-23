@@ -31,7 +31,7 @@ FluxTV provides a sleek, card-based interface to manage, organize, and play live
 
 | Home | Live TV | EPG Guide |
 | :--- | :--- | :--- |
-| ![Home](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-home.png) | ![Live TV](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-livetv.png) | ![Guide](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-guide.pn) |
+| ![Home](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-home.png) | ![Live TV](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-livetv.png) | ![Guide](https://github.com/VirtueCore/fluxtv/blob/50a675d95dff009d52fc8d0ac8d43006ff0c6489/fluxtv-guide.png) |
 
 | Manage Channels | Logo Mapping | Backup |
 | :--- | :--- | :--- |
