@@ -1,0 +1,61 @@
+/* Tablet and larger keep sidebar */
+@media (min-width: 1025px) {
+    .mobile-nav { display: none; }
+}
+
+/* Tablet portrait and smaller: hide sidebar, show mobile nav */
+@media (max-width: 1024px) {
+    .sidebar { display: none; }
+    .view-container {
+        margin-left: 0;
+        padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    }
+    .mobile-nav { display: flex; }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .view-container { padding: 16px; }
+
+    /* Hero: stack vertically, center text */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        min-height: auto;
+    }
+    .hero-logo {
+        height: 100px;
+        margin-right: 0;
+    }
+    .hero-channel-name {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    /* Channel cards smaller, fit two columns */
+    .channel-card { width: 160px; }
+    .channel-card .logo-area { height: 100px; }
+
+    /* Guide grid adjust column widths */
+    .guide-channel-header,
+    .guide-channel-cell {
+        min-width: 160px;
+        max-width: 160px;
+    }
+    .guide-time-slot { min-width: 120px; }
+
+    /* Grid layouts for logos, favorites, search */
+    .logo-manager-list,
+    .favorites-grid,
+    .search-results {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    /* Table adjustments for management */
+    .table th,
+    .table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,32 @@
+services:
+  fluxtv:
+    build: .
+    container_name: fluxtv
+    restart: unless-stopped
+
+    ports:
+      - "10.0.0.38:8888:8888"
+
+    environment:
+      FLUXTV_HOST: 0.0.0.0
+      FLUXTV_PORT: 8888
+      FLUXTV_DATABASE: /data/fluxtv.db
+      FLUXTV_DEFAULT_TIMEZONE: America/New_York
+
+    volumes:
+      - fluxtv-data:/data
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8888/health')"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  fluxtv-data:
